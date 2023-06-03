@@ -6,5 +6,10 @@ pipeline {
                 bat 'mvn -B -DskipTests clean package'
             }
         }
+        stage('just like that') {
+            steps {
+                echo 'Hello'
+            }
+        }
     }
 }
